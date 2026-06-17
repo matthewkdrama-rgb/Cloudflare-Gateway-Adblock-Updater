@@ -12,10 +12,11 @@ jobs:
       contents: read
 
     steps:
-      - name: Checkout repository
+- name: Checkout repository
         uses: actions/checkout@v6
         with:
-          ref: personal
+          ref: main
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v6
